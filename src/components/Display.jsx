@@ -1,15 +1,12 @@
-import React from 'react'
+import { React, useContext } from 'react'
 import {UserContext} from '../index.js'
 
 function Display() {
+  const user = useContext(UserContext)
   return (
-    <UserContext.Consumer>
-      {value => (
-        <div>
-          {value.name}
-        </div>
-      )}
-    </UserContext.Consumer>
+    <div className="text-xl text-white">
+      {user.login}
+    </div>
   )
 }
 

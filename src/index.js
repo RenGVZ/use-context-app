@@ -5,10 +5,7 @@ import App from './App';
 
 export const UserContext = React.createContext();
 
-const user = {
-  name: 'Gavin',
-  email: 'gavin.rene.g@gmail.com'
-}
+const user = {}
 
 ReactDOM.render(
   <UserContext.Provider value={user}>
